@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#CCB1BFD4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/data_of_the_responsable"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/NOMBRE_COMPLETO"
+            style="@style/LinearBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/CORREO_ELECTRONICO"
+            style="@style/LinearBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/TELEFONO"
+            style="@style/LinearBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="14dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/relationship"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/PASSWORD"
+            style="@style/LinearBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/register"
+            android:layout_width="51dp"
+            android:layout_height="57dp"
+            android:clickable="true"
+            app:backgroundTint="@color/buttonP"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

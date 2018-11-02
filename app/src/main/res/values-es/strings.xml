@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A-pills</string>
+    <string name="password">Contraseña</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="register">Registro</string>
+    <string name="login">Login</string>
+    <string name="full_name">Nombre Completo</string>
+    <string name="email_address">Correo</string>
+    <string name="relationship">Parentesco</string>
+    <string name="patient_data">Datos del Paciente</string>
+    <string name="todo">TODO</string>
+    <string name="change_picture">Cambiar imagen</string>
+    <string name="age">Edad</string>
+    <string name="allergies">Alergias</string>
+    <string name="history">Historial</string>
+    <string name="data_of_the_responsable">Data of the responsable</string>
+</resources>
