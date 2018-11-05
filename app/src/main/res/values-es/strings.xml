@@ -14,5 +14,6 @@
     <string name="age">Edad</string>
     <string name="allergies">Alergias</string>
     <string name="history">Historial</string>
-    <string name="data_of_the_responsable">Data of the responsable</string>
+    <string name="data_of_the_responsable">Datos del resposable</string>
+    <string name="sufferings">sufferings</string>
 </resources>

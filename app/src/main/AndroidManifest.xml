@@ -32,7 +32,6 @@
             android:name=".Register"
             android:label="Register" />
         <activity android:name=".ReadComments" />
-        <activity android:name=".register_patient"></activity>
     </application>
 
 </manifest>

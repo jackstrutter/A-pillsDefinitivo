@@ -6,84 +6,182 @@
     android:background="@drawable/wallpaper">
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:background="#CCB1BFD4"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_margin="15dp">
 
-        <TextView
-            android:id="@+id/textView2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:background="@drawable/button_background"
+            android:layout_margin="0dp"
+            android:background="#CCB1BFD4"
             android:gravity="center"
-            android:padding="5dp"
-            android:text="@string/data_of_the_responsable"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/NOMBRE_COMPLETO"
-            style="@style/LinearBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@android:color/background_light"
-            android:ems="10"
-            android:hint="@string/full_name"
-            android:inputType="textPersonName"
-            android:padding="10dp" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/data_of_the_responsable"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/CORREO_ELECTRONICO"
-            style="@style/LinearBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@android:color/background_light"
-            android:ems="10"
-            android:hint="@string/email_address"
-            android:padding="10dp" />
+            <EditText
+                android:id="@+id/NOMBRE_COMPLETO"
+                style="@style/LinearBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
 
-        <EditText
-            android:id="@+id/TELEFONO"
-            style="@style/LinearBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="14dp"
-            android:background="@android:color/background_light"
-            android:ems="10"
-            android:hint="@string/relationship"
-            android:inputType="textPersonName"
-            android:padding="10dp" />
+            <EditText
+                android:id="@+id/CORREO_ELECTRONICO"
+                style="@style/LinearBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/email_address"
+                android:padding="10dp" />
 
-        <EditText
-            android:id="@+id/PASSWORD"
-            style="@style/LinearBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@android:color/background_light"
-            android:ems="10"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:padding="10dp" />
+            <EditText
+                android:id="@+id/TELEFONO"
+                style="@style/LinearBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/relationship"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/register"
-            android:layout_width="51dp"
-            android:layout_height="57dp"
-            android:clickable="true"
-            app:backgroundTint="@color/buttonP"
-            app:srcCompat="@android:drawable/ic_menu_send" />
+            <EditText
+                android:id="@+id/PASSWORD"
+                style="@style/LinearBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/patient_data"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/profile"
+                app:srcCompat="@drawable/profile" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/change_picture" />
+
+            <EditText
+                android:id="@+id/patient_name2"
+                style="@style/LinearBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/age2"
+                style="@style/LinearBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/age"
+                android:inputType="textPersonName|number"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/sufferings2"
+                style="@style/EditBack"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/sufferings"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/allergies2"
+                style="@style/LinearBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/allergies"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/history2"
+                style="@style/EditBack"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/history"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/registerB2"
+                style="@style/ButtonP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/register" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>

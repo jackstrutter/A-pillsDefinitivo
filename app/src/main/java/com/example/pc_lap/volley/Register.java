@@ -21,8 +21,10 @@ import android.widget.Toast;
 
 public class Register extends Activity implements OnClickListener{
     private EditText user, pass, nom, tel;
-    private FloatingActionButton  mRegister;
-    private Intent i;
+
+    private EditText name, age, suff, all,his;
+    private Button mRegister;
+
 
     // Progress Dialog
     private ProgressDialog pDialog;
@@ -50,8 +52,13 @@ public class Register extends Activity implements OnClickListener{
         user = (EditText)findViewById(R.id.CORREO_ELECTRONICO);
         pass = (EditText)findViewById(R.id.PASSWORD);
         tel = (EditText)findViewById(R.id.TELEFONO);
+        name = (EditText) findViewById(R.id.patient_name2);
+        age = (EditText) findViewById(R.id.age2);
+        suff = (EditText) findViewById(R.id.sufferings2);
+        all = (EditText) findViewById(R.id.allergies2);
+        his = (EditText) findViewById(R.id.history2);
 
-        mRegister = (FloatingActionButton)findViewById(R.id.register);
+        mRegister = (Button)findViewById(R.id.registerB2);
         mRegister.setOnClickListener(this);
 
 
@@ -87,6 +94,11 @@ public class Register extends Activity implements OnClickListener{
             String CORREO_ELECTRONICO = user.getText().toString();
             String PASSWORD = pass.getText().toString();
             String TELEFONO = tel.getText().toString();
+            String patient_name = name.getText().toString();
+            String patient_age = age.getText().toString();
+            String sufferings = suff.getText().toString();
+            String allergies = all.getText().toString();
+            String history = his.getText().toString();
 
             try {
                 // Building Parameters
@@ -96,6 +108,11 @@ public class Register extends Activity implements OnClickListener{
                 params.add(new BasicNameValuePair("CORREO_ELECTRONICO", CORREO_ELECTRONICO));
                 params.add(new BasicNameValuePair("PASSWORD", PASSWORD));
                 params.add(new BasicNameValuePair("TELEFONO", TELEFONO));
+                params.add(new BasicNameValuePair("patient_name", patient_name));
+                params.add(new BasicNameValuePair("patient_age", patient_age));
+                params.add(new BasicNameValuePair("sufferings", sufferings));
+                params.add(new BasicNameValuePair("allergies", allergies));
+                params.add(new BasicNameValuePair("history", history));
 
                 Log.d("request!", "starting");
 
@@ -110,7 +127,7 @@ public class Register extends Activity implements OnClickListener{
                 success = json.getInt(TAG_SUCCESS);
                 if (success == 1) {
                     Log.d("User Created!", json.toString());
-                    Intent intent = new Intent(Register.this,register_patient.class);
+                    Intent intent = new Intent(Register.this,MainActivity.class);
                     startActivity(intent);
                     return json.getString(TAG_MESSAGE);
 
